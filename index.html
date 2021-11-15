@@ -17,7 +17,7 @@
 
         <section class="todo-section">
             <input type="text" placeholder="Nuovo prodotto" v-model.trim= "newTodo">
-            <button class="add-btn">aggiungi</button>
+            <button class="add-btn" @click="addTodo">Aggiungi</button>
         </section>
 
         <main class="list-container">

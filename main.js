@@ -37,6 +37,16 @@ const app = new Vue({
         removeTodo(index) {
             console.log('click');
             this.todos.splice(index, 1)
+        },
+
+        //aggiungere todo alla lista
+        addTodo(){
+            if(this.newTodo !== ''){
+                this.todos.push({
+                    text: this.newTodo,
+                    completed: false
+                });
+            }
         }
     }
 })
