@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: cornflowerblue;
+}
+
+/* header */
+header{
+    text-align: center;
+}
+
+header img{
+    width: 400px;
+    margin-bottom: 50px;
+    
+}
+
+/* section */
+.todo-section{
+    text-align: center;
+}
+
+.todo-section input{
+    width: 300px;
+    height: 25px;
+    border-radius: 20px;
+    border: 3px solid #001533;
+    padding: 0 5px;
+}
+
+.todo-section .add-btn{
+    width: 80px;
+    height: 25px;
+    border-radius: 20px;
+    background: #00e165;
+    border: none;
+    color: white;
+}
+
+.todo-section .add-btn:hover,
+.todo-section .add-btn:focus{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+/* main */
+
+.list-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.todos-list{
+    background: #00e165;
+    width: 500px;
+    list-style: none;
+    padding: 5px 5px;
+    
+}
+
+.todos-list .todo{
+    padding-bottom: 4px;
+}
+
+
+.todo .text{
+    flex-grow: 1;
+    position: relative;
+    padding: 0 25px;
+}
+
+.todo .delte{
+    font-size: 14px;
+    position: absolute;
+    align-items: center;
+}
+
+.todo .delte:hover{
+    color: red;
+}
+
+.todo .text::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #001533;
+}
