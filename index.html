@@ -23,7 +23,7 @@
         <main class="list-container">
             <ul class="todos-list">
                 <li class="todo" v-for="todo in todos">
-                    <span class="text" >{{ todo.text }}</span>
+                    <span class="text" :class="{completed: todo.completed}">{{ todo.text }}</span>
                     <i class="fas fa-times delte" @click="removeTodo"></i>
                 </li>
                
