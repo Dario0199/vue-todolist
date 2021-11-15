@@ -99,3 +99,7 @@ header img{
     width: 15px;
     border: 2px solid #001533;
 }
+
+.todo .text.completed{
+    text-decoration: line-through;
+}

@@ -16,24 +16,17 @@
         </header>
 
         <section class="todo-section">
-            <input type="text" placeholder="Nuovo prodotto">
+            <input type="text" placeholder="Nuovo prodotto" v-model.trim= "newTodo">
             <button class="add-btn">aggiungi</button>
         </section>
 
         <main class="list-container">
             <ul class="todos-list">
-                <li class="todo">
-                    <span class="text">Prodotto da comprare</span>
-                    <i class="fas fa-times delte"></i>
+                <li class="todo" v-for="todo in todos">
+                    <span class="text" >{{ todo.text }}</span>
+                    <i class="fas fa-times delte" @click="removeTodo"></i>
                 </li>
-                <li class="todo">
-                    <span class="text">Prodotto da comprare</span>
-                    <i class="fas fa-times delte"></i>
-                </li>
-                <li class="todo">
-                    <span class="text">Prodotto da comprare</span>
-                    <i class="fas fa-times delte"></i>
-                </li>
+               
             </ul>
 
         </main>
